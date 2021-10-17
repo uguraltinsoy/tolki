@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#EDEDED">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#FF9800"
+        android:text="Tolki"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/sms"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="Telefon doğrulaması ile giriş"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_corner"
+            android:orientation="horizontal"
+            android:id="@+id/mPhoneLinear">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:text="+90"
+                android:textSize="18sp"
+                android:paddingLeft="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/mPhone"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:hint="(xxx) xxx xx xx"
+                android:gravity="center|left"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:weightSum="6"
+            android:id="@+id/mVerifyCode"
+            android:visibility="gone">
+
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/ic_verify_corner"
+                android:id="@+id/mCode1"/>
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/ic_verify_corner"
+                android:id="@+id/mCode2"/>
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/ic_verify_corner"
+                android:id="@+id/mCode3"/>
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/ic_verify_corner"
+                android:id="@+id/mCode4"/>
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/ic_verify_corner"
+                android:id="@+id/mCode5"/>
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/ic_verify_corner"
+                android:id="@+id/mCode6"/>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Kod GÖNDER"
+            android:id="@+id/mSend"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:background="@drawable/ic_button_radius"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="DOĞRULA"
+            android:enabled="false"
+            android:id="@+id/mVerify"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:background="@drawable/ic_button_radius"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "238227441866",
+    "project_id": "tolki-53493",
+    "storage_bucket": "tolki-53493.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238227441866:android:fc75d71b1a80230b30cc33",
+        "android_client_info": {
+          "package_name": "com.deeplabstudio.tolki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238227441866-vsclfv1s0nb96sctild8jh2ot22h1k9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQK4HBwMAIOGBC2GA510jmy-wkoatgAKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238227441866-vsclfv1s0nb96sctild8jh2ot22h1k9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

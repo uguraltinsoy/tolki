@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#38393A</color>
+    <color name="colorPrimaryDark">#303030</color>
+    <color name="colorAccent">#F44336</color>
+
+    <color name="dark_text">#FFF</color>
+    <color name="chat_background">#303030</color>
+    <color name="message_text">#FFFFFF</color>
+    <color name="message_card">#959595</color>
+    <color name="bootom_nav_bar">#989898</color>
+</resources>

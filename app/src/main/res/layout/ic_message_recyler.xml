@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/message_root"
+        android:orientation="vertical"
+        android:gravity="right">
+
+        <LinearLayout
+            android:layout_height="60dp"
+            android:layout_width="300dp"
+            android:background="@drawable/rec_round_primary_color"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/mMessageLinear"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                android:id="@+id/mPlayPause"
+                android:src="@drawable/ic_baseline_play_arrow_24"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/mSeekBar"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:maxWidth="300dp"
+                android:id="@+id/mTimeText"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:textSize="10sp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_below="@id/mMessageLinear"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_baseline_done_all_24"
+                android:id="@+id/mRead"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
